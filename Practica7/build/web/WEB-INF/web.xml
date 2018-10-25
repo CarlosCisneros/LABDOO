@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>PROCESO</servlet-name>
+        <servlet-class>CONTROLADOR.PROCESO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>agregargalleta</servlet-name>
+        <servlet-class>galleta.agregargalleta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>galletachida</servlet-name>
+        <servlet-class>galleta.galletachida</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>dargalleta</servlet-name>
+        <servlet-class>CONTROLADOR.cookie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PROCESO</servlet-name>
+        <url-pattern>/PROCESO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>agregargalleta</servlet-name>
+        <url-pattern>/agregargalleta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>galletachida</servlet-name>
+        <url-pattern>/galletachida</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>dargalleta</servlet-name>
+        <url-pattern>/dargalleta</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            45
+        </session-timeout>
+    </session-config>
+</web-app>
